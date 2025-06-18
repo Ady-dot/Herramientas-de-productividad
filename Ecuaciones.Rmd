@@ -1,0 +1,39 @@
+---
+title: "Ecuaciones"
+author: "Adriana Ascencio"
+date: "2025-06-18"
+output: 
+  html_document:
+    theme: darkly
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ejercicio uso de ecuaciones
+
+La ecuación $E=mc^2$ es fundamental para la física.
+
+1. La energía cinética es: $K = \frac{1}{2}mv^2$
+2. Ley de gravitación: $G=\frac{m_1m_2}{r^2}$
+3. Raltividad General: $R_{\mu \nu} - \frac{1}{2}R_g{\mu \nu} = \kappa T_{\mu \nu}$
+4. Ley de Newton: $F=ma$
+5. Cuadráticas: $\sqrt{x}$
+6. Formación del agua: $2\mathrm{H}_2(g) + \mathrm{O}_2(g) \rightarrow 2\mathrm{H}_2\mathrm{O}(l)$
+7. Formula general: $x = \frac{-b \pm sqrt{b^2 - 4ac}}{2a}$
+8. Ley de Amperè-Maxwell $\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}$
+9. Media aritmética $\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i$
+10. Transformada de Fourier:  
+   $$X(f) = \int_{-\infty}^{\infty} x(t)\,e^{-2\pi i f t}\,\mathrm{d}t$$
+11. $$\begin{equation}\label{ec.fn_de_activacion}
+y^{(j)}=\left[\begin{matrix} y_1^{(j)}\\\vdots\\y_n^{(j)}\\\end{matrix}\right]=
+\left[\begin{matrix} \varphi \left(\nu_1^{(j)}\right)\\\vdots\\\varphi \left(\nu_{n}^{(j)}\right)\\\end{matrix}\right]=
+\varphi\left[\begin{matrix} \nu_1^{(j)}\\\vdots\\\nu_n^{(j)}\\\end{matrix}\right]=\varphi^{(j)}
+\end{equation}$$
+
+
+12. $\frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS \frac{\partial V}{\partial S} - rV = 0$
+
+[Ecuaciones en laTex](https://manualdelatex.com/tutoriales/ecuaciones)

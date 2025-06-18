@@ -1,0 +1,20 @@
+---
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+---
+# Análisis del data set CARS
+## by Adriana Ascencio
+
+**Primera Parte**
+```{r}
+data(cars)
+str(cars)
+summary(cars)
+plot(cars)
+
+hist(cars$speed)
+boxplot(cars$speed)
+```

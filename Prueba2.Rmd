@@ -1,0 +1,33 @@
+---
+title: "Listas_frutas"
+author: "Adriana Ascencio"
+date: "2025-06-18"
+output: 
+  html_document:
+    theme: darkly
+    highlight: haddock
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+frutas <- c("Manzana", "Banana", "Banana", "Sandía")
+tabla <- table(frutas)
+print(tabla)
+print(names(which.max(tabla))) #fruta más repetida
+```
+
+## Análisis gráficos de frutas preferidas
+
+```{r echo = TRUE}
+library(ggplot2)
+frutas <- c("Manzana", "Banana", "Banana", "Sandía", "Banana")
+df_frutas <- as.data.frame(table(frutas))
+
+ggplot(df_frutas, aes(x = frutas, y =Freq, fill = frutas)) +
+  geom_col() +
+  geom_text(aes(label = Freq), vjust = -0.5) +
+  theme_classic()
+```
